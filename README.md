@@ -78,7 +78,7 @@ Do a hard refresh in your browser (Ctrl+F5), or add a cache-buster:
 
 ```yaml
 type: custom:bar-visualizer-card
-entity: media_player.spotify
+entity: media_player.spotify ```
 
 Configuration
 Core Options
