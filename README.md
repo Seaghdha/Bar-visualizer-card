@@ -26,7 +26,6 @@ profiles), and allows detailed styling via YAML.
     -   `r,g,b`
 -   State mapping via `stateMap`
 -   Animation can be disabled per profile
--   No `card_mod` required
 -   Fully customizable layout (radius, padding, border)
 
 ------------------------------------------------------------------------
