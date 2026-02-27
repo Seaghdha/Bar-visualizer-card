@@ -91,8 +91,6 @@ entity: media_player.spotify
 | `inactiveProfile`| string  | `calm`  | Fallback profile if entity state is not mapped               |
   -------------------------------------------------------------------------------
 
-------------------------------------------------------------------------
-
 ## 🎨 Card Appearance
 
 | Option            | Type    | Default        | Description                         |
@@ -105,8 +103,6 @@ entity: media_player.spotify
 | `cardBorder`     | boolean | `false`       | Enables subtle border               |
   ---------------------------------------------------------------------------
 
-------------------------------------------------------------------------
-
 # 🎛 Profiles
 
 Profiles define how the visualizer behaves for different states.
@@ -117,28 +113,20 @@ Default profiles:
 -   `calm`
 -   `freeze` (animation disabled)
 
-Each profile supports:
+## 🎛 Profile Options
 
-  -----------------------------------------------------------------------
-  Option                Type             Description
-  --------------------- ---------------- --------------------------------
-  `minHeight`           number           Minimum bar height (px). Safety
-                                         floor: **3px**
+Each profile supports the following options:
 
-  `maxHeight`           number           Maximum bar height (px)
-
-  `amp`                 number           Intensity multiplier (0--1+)
-
-  `speed`               number           Animation speed (higher =
-                                         faster)
-
-  `barColor`            string           Bar color
-
-  `glowColor`           string           Glow color
-
-  `glowIntensity`       number           Glow intensity (0--1)
-
-  `animate`             boolean          `false` disables animation
+| Option           | Type    | Default (if omitted) | Description |
+|------------------|---------|----------------------|------------|
+| `minHeight`      | number  | `12` (profile dependent) | Minimum bar height in pixels. Bars never drop below **3px** (safety floor). |
+| `maxHeight`      | number  | `90` (profile dependent) | Maximum bar height in pixels. |
+| `amp`            | number  | `0.25–1.0` (profile dependent) | Intensity multiplier controlling vertical movement. Higher = stronger animation. |
+| `speed`          | number  | `1.0` | Animation speed. **Higher = faster**. |
+| `barColor`       | string  | `#ffffff` | Bar color. Supports hex, rgb(), rgba(), or `r,g,b`. |
+| `glowColor`      | string  | `#ffffff` | Glow color. Same formats as `barColor`. |
+| `glowIntensity`  | number  | `0` | Glow strength from `0` to `1`. |
+| `animate`        | boolean | `true` (except freeze) | Set to `false` to disable animation for this profile. |
   -----------------------------------------------------------------------
 
 Bars will never drop below **3px** even if `minHeight` is set lower.
