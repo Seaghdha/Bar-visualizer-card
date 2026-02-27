@@ -106,25 +106,14 @@ entity: media_player.spotify
 
 ## 🎨 Card Appearance
 
-  ---------------------------------------------------------------------------
-  Option              Type        Default             Description
-  ------------------- ----------- ------------------- -----------------------
-  `backgroundColor`   string      `transparent`       Inner wrapper
-                                                      background
-
-  `cardRadius`        number      `0`                 `ha-card` border radius
-                                                      (px)
-
-  `innerRadius`       number      `0`                 Inner wrapper radius
-                                                      (px)
-
-  `cardPadding`       number      `0`                 Padding inside
-                                                      `ha-card` (px)
-
-  `wrapperPadding`    number      `0`                 Padding around bars
-                                                      (px)
-
-  `cardBorder`        boolean     `false`             Enables subtle border
+| Option            | Type    | Default        | Description                         |
+|------------------|---------|---------------|-------------------------------------|
+| `backgroundColor`| string  | `transparent` | Inner wrapper background            |
+| `cardRadius`     | number  | `0`           | `ha-card` border radius (px)        |
+| `innerRadius`    | number  | `0`           | Inner wrapper border radius (px)    |
+| `cardPadding`    | number  | `0`           | Padding inside `ha-card` (px)       |
+| `wrapperPadding` | number  | `0`           | Padding around bars (px)            |
+| `cardBorder`     | boolean | `false`       | Enables subtle border               |
   ---------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
