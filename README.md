@@ -80,26 +80,15 @@ entity: media_player.spotify
 
 ## 🔹 Core Options
 
-  -------------------------------------------------------------------------------
-  Option              Type        Default             Description
-  ------------------- ----------- ------------------- ---------------------------
-  `entity`            string      `null`              Target entity
-                                                      (e.g. `media_player.xxx`)
-
-  `demo`              boolean     `false`             Runs card without entity
-                                                      (forces `playing` profile)
-
-  `height`            number      `96`                Height of bar container
-                                                      (px)
-
-  `barCount`          number      `20`                Number of bars
-
-  `barWidth`          number      `10`                Width of bars (px)
-
-  `gap`               number      `6`                 Space between bars (px)
-
-  `inactiveProfile`   string      `calm`              Fallback profile if state
-                                                      not mapped
+| Option            | Type    | Default | Description                                                   |
+|------------------|---------|---------|---------------------------------------------------------------|
+| `entity`         | string  | `null`  | Target entity (e.g. `media_player.xxx`)                      |
+| `demo`           | boolean | `false` | Runs card without entity (forces `playing` profile)          |
+| `height`         | number  | `96`    | Height of bar container (px)                                 |
+| `barCount`       | number  | `20`    | Number of bars                                               |
+| `barWidth`       | number  | `10`    | Width of bars (px)                                           |
+| `gap`            | number  | `6`     | Space between bars (px)                                      |
+| `inactiveProfile`| string  | `calm`  | Fallback profile if entity state is not mapped               |
   -------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
