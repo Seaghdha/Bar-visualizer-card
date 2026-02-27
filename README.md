@@ -34,7 +34,7 @@ profiles), and allows detailed styling via YAML.
 ## Preview
 
 <p align="center">
-  <img src="bar_visualizer.gif" width="650">
+  <img src="bar_visualizer_2.gif" width="650">
 </p>
 
 ------------------------------------------------------------------------
